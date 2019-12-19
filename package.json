@@ -1,0 +1,35 @@
+{
+  "name": "conexion-serial",
+  "version": "1.0.0",
+  "description": "CONEXION NODE HACIA MONITOR SERIAL",
+  "main": "index.js",
+  "scripts": {
+    "test": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juanevelio/fachadas_dinamicas"
+  },
+  "keywords": [
+    "tesis",
+    "fachadas",
+    "dinamicas"
+  ],
+  "author": "Juan Molinas",
+  "license": "MIT",
+  "dependencies": {
+    "css": "^2.2.4",
+    "css-loader": "^2.1.1",
+    "express": "^4.16.4",
+    "express.io": "^1.1.13",
+    "forecastio": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "loader": "^2.1.1",
+    "serialport": "^7.1.4",
+    "socket.io": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
