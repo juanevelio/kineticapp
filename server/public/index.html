@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./materialize.min.css">
+        <link rel="shortcut icon" href="./favi.png" type="image/x-icon">
+        <style>
+            body .row{
+            padding: 0;
+            margin: 0
+        }
+        </style>
+        <title>APP- FACHADA CINETICA</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="row ">
+                    <div class="center">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <div class="row center"><img src="fada.jpg" alt="fada.jpg" class=" col 12" width="90%"></div>
+                                <span class="card-title">APP FACHADA CINETICA V 0.0.1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="clima" class="card center blue-grey darken-1">
+                        ....
+                        <!-- el "...." es importante para que no se rompa en codigo por no reconocer como propiedad en innerHTML   -->
+                    </div>
+                    <div class="card center card blue-grey darken-1 white-text">
+                        <div class="card  blue-grey darken-1 row">
+                            <input id="obtener" type="button" value="OBTEN  UBICACION" class="col m-3 l-3 s-5 waves-effect waves-light btn-small card blue-grey darken-3 white-text" />
+                            <input type="number" name="latitud" id="latitud" class="blue lighten-3 col s4 col l4 col m4">
+                            <input type="number" name="latitud" id="longitud" class="blue lighten-3 col s4 col l4 col m4 col push-s1 push-l1 push-m1">
+                            <div class="card">
+                                <input type="number" name="temperatura" id="temperatura" class="blue darken-1 col s3 col l3 col m3"
+                                    placeholder="temperatura">
+                                <input type="number" name="luminosidad" id="luminosidad" class="blue darken-1 col s3 col l3 col m3 col "
+                                    placeholder="luminosidad">
+                                <input type="number" name="luminosidad" id="luminosidad" class="blue darken-1 col s3 col l3 col m3 col "
+                                    placeholder="humedad">
+                            </div>
+                        </div>
+                        <input type="range" name="rango" id="rango" min="50" max="100" step="1">
+                        <div class="col s1 m2 l3 pull-l1 ">min 50</div>
+                        <div class="col s1 m2 l3 push 10">max 100</div>
+                        <h4>
+                            LECTURA SERIAL
+                        </h4>
+                        <h5 id="lectura" class="">
+                        </h5>
+                        <footer>
+                            <p class=" ">
+                                con Vanilla JS
+                            </p>
+                        </footer>
+                        <div id="climacompleto" class="button blue darken-1">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./socket.io/socket.io.js">
+            </script>
+            <script src="./main.js">
+            </script>
+        </main>
+    </body>
+</html>
