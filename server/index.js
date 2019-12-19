@@ -7,14 +7,14 @@ const io = socketIO.listen(servidor)
 const router = express.Router()
 const path = require("path")
 const Forecast = require("forecastio")
-
+const url= https://kineticapp.herokuapp.com/
 
 
 const clima = new Forecast('1ca20626a260b4a6d17559409c8d6c01')
 const datos = clima.buildUrl(-25, -58)
 io.emit("datos", datos)
-servidor.listen( "https://kineticapp.herokuapp.com/", function () {
-    console.log("servidor escuchando en puerto", "https://kineticapp.herokuapp.com/" , "\n", datos)
+servidor.listen(url, function () {
+    console.log("servidor escuchando en puerto", url , "\n", datos)
 
 })
 
