@@ -7,7 +7,7 @@ const io = socketIO.listen(servidor)
 const router = express.Router()
 const path = require("path")
 const Forecast = require("forecastio")
-const url= https://kineticapp.herokuapp.com/
+const url= "https://git.heroku.com/kineticapp.git"
 
 
 const clima = new Forecast('1ca20626a260b4a6d17559409c8d6c01')
